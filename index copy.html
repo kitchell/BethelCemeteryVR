@@ -10,7 +10,7 @@
 
   </head>
   <body>
-
+      document.querySelector('a-scene').renderer.setTexture2D(ourTexture, 0);
     <a-scene background="color: black" loading-screen="dotsColor: orange; backgroundColor: black">
 
 <!--        <a-simple-sun-sky sun-position="1 1 0" fog-color="#578ABD" light-color="#6CB5FE" dark-color="#6AA3DC"></a-simple-sun-sky>-->
@@ -35,25 +35,16 @@
         </a-entity>
         
 <!--        model -->
-        <a-entity id="R4" gltf-model="./assets/R4.glb" rotation="-45.59426246312552 131.62215652863324 9.560373769552918" position="-0.95486 1.99025 -4.09442" scale="0.2 0.2 0.2"></a-entity>
-        <a-entity id="C9" gltf-model="./assets/C9.glb" rotation="-42.47794501540898 -34.51726940986131 -13.226157742799924" position="-4.51102 3.1273 -0.60257" scale="0.2 0.2 0.2"></a-entity>
-        <a-entity id="V23" gltf-model="./assets/V2_V3.glb" rotation="-33.269940289861516 -35.244352851882326 1.5767798522000256" position="2.31543 1.50197 -1.33287" scale="0.2 0.2 0.2"></a-entity>
-<!--
         <a-entity id="R4" gltf-model="#R4model" rotation="-42.70 106.22 4.188" position="3.14 4.523 -7.220" scale="0.5 0.5 0.5"></a-entity>
         <a-entity id="C9" gltf-model="#C9model" rotation="-42.93344646253798 -31.55 -16.95554003130645" position="-7.656 7.145 -1.648" scale="0.5 0.5 0.5"></a-entity>
         <a-entity id="V23" gltf-model="#V23model" rotation="-33.27 -76.69 1.577" position="5.363 2.246 0.145" scale="0.5 0.5 0.5"></a-entity>
--->
         
 <!--        lighting -->
         <a-light type="ambient" color="#BBB" castShadow="true" intensity="3"></a-light>
-        <a-light type="spot" color="#BBB" castShadow="true" intensity="4.2" angle="20" position="0 2 0" target="#left">
-        <a-entity id="left" position="-3.79793 -1 -1.7141" visible=""></a-entity></a-light>
-<!--
         <a-light type="spot" color="#BBB" castShadow="true" intensity="4.2" angle="30" position="0 2 0" target="#left">
             <a-entity id="left" position="-2 0 -1.5"></a-entity>
         
         </a-light>
--->
 <!--
         <a-entity light="color: #BBB; type: ambient" intensity="2" data-aframe-default-light="" aframe-injected=""></a-entity>
         <a-entity light="castShadow: true" position="-0.5 1 1" intensity=".6" data-aframe-default-light="" aframe-injected=""></a-entity>
